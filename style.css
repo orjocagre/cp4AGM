@@ -3,3 +3,65 @@
     padding: 0;
     margin: 0;
 }
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(197, 211, 255);
+}
+
+button {
+    font-size: 30px;
+    background-color: rgb(236, 236, 236);
+    color: rgb(63, 63, 63);
+    border-radius: 20%;
+    border-style: solid;
+    border-width: 2px;
+    margin: 5px;
+    border-color: rgb(197, 211, 255);    
+}
+.calcular {
+    height: 10%;
+}
+.total {
+    height: 15%;
+}
+.numeros_arriba {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.numeros_arriba div {
+    height: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+.numeros_arriba div button {
+    width: 100%;
+}
+.numeros_abajo {
+    height: 30%;
+    display: flex;
+}
+.numeros_abajo > div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.numeros_abajo > div > div  {
+    height: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+.numeros_abajo > div > div button {
+    width: 100%;
+    
+}
+.numeros_abajo > div > div .cero {
+    width: 200%;
+}
+.numeros_abajo > button {
+    width: 25%;
+    
+}
