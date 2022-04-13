@@ -6,49 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <main>
         <div class="calcular">
-
+            <p id="p_calcular">2+5</p>
         </div>
         <div class="total">
-
+            <p id="p_total">=7</p>
         </div>
-        <div class="numeros_arriba">
-            <div>
-                <button>CE</button>
-                <button>B</button>
-                <button>/</button>
-                <button>*</button>
-            </div>
-            <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
-            </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-            </div>
-        </div>
-        <div class="numeros_abajo">
-            <div>
+        <div class="botones">
+            <div class="numeros_arriba">
                 <div>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+                    <button onclick="escribir()">CE</button>
+                    <button>B</button>
+                    <button>/</button>
+                    <button>*</button>
                 </div>
                 <div>
-                    <button class="cero">0</button>
-                    <button>.</button>
+                    <button onclick="escribir()">7</button>
+                    <button onclick="escribir()">8</button>
+                    <button onclick="escribir()">9</button>
+                    <button onclick="escribir()">-</button>
+                </div>
+                <div>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>+</button>
                 </div>
             </div>
-            <button>=</button>
+            <div class="numeros_abajo">
+                <div class="numeros_izquierda">
+                    <div class="uno_tres">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div class="cero_punto">
+                        <div class="cero">
+                            <button>0</button>
+                        </div>
+                        <div class="punto">
+                            <button>.</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="igual">
+                    <button>=</button>
+                </div>
+            </div>
         </div>
+        
         
        
     </main>

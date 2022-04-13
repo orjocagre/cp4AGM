@@ -3,65 +3,103 @@
     padding: 0;
     margin: 0;
 }
+body {
+    display: flex;
+    justify-content: center;
+}
 main {
     width: 100vw;
     height: 100vh;
+    max-width: 450px;
+    min-width: 250px;
+    min-height: 340px;
     background-color: rgb(197, 211, 255);
+    padding: 10px;
 }
-
-button {
+.calcular {
+    height: 10%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.calcular p {
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.total {
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.total p {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.botones {
+    height: 75%;
+}
+.botones div {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.botones button {
     font-size: 30px;
     background-color: rgb(236, 236, 236);
     color: rgb(63, 63, 63);
     border-radius: 20%;
-    border-style: solid;
-    border-width: 2px;
-    margin: 5px;
-    border-color: rgb(197, 211, 255);    
+    border-style: none;
+    border-width: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 5px;
 }
-.calcular {
-    height: 10%;
-}
-.total {
-    height: 15%;
-}
+  
+.botones button:hover {
+    background-color: #757575;
+    color: white;
+  }
+
 .numeros_arriba {
-    height: 45%;
-    display: flex;
+    height: 60%;
     flex-direction: column;
-    justify-content: stretch;
 }
 .numeros_arriba div {
     height: 100%;
-    display: flex;
-    justify-content: stretch;
-}
-.numeros_arriba div button {
-    width: 100%;
+    padding: 5px 0;
 }
 .numeros_abajo {
-    height: 30%;
-    display: flex;
+    height: 40%;
 }
-.numeros_abajo > div {
+.numeros_abajo .numeros_izquierda {
     width: 75%;
-    display: flex;
     flex-direction: column;
 }
-.numeros_abajo > div > div  {
+.numeros_abajo .numeros_izquierda > div  {
     height: 100%;
-    display: flex;
-    justify-content: stretch;
+    padding: 5px 0;
 }
-
-.numeros_abajo > div > div button {
-    width: 100%;
-    
+.numeros_abajo .numeros_izquierda .cero_punto .cero {
+    width: 66.66%;
 }
-.numeros_abajo > div > div .cero {
-    width: 200%;
+.numeros_abajo .numeros_izquierda .cero_punto .punto {
+    width: 33.33%;
 }
-.numeros_abajo > button {
+.numeros_abajo .igual {
     width: 25%;
-    
+    padding: 5px 0;
+}
+.numeros_abajo .igual button {
+    background-color: rgb(48, 190, 48);
+    color: white;
+}
+.numeros_abajo .igual button:hover {
+    background-color: #757575;
+    color: white;
 }
